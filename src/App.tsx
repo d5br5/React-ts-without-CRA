@@ -1,11 +1,19 @@
 import React from "react";
-import Happy from "./components/Happy";
+import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages";
+import Intro from "./pages/Intro";
 
 const App = () => (
-	<>
-		<h1>React without CRA..dsds.</h1>
-		<Happy />
-	</>
+	<BrowserRouter>
+		<div>
+			<Link to={"/"}>Home</Link>
+			<Link to={"/intro"}>Intro</Link>
+		</div>
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/intro" element={<Intro />} />
+		</Routes>
+	</BrowserRouter>
 );
 
 export default App;
