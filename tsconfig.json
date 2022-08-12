@@ -27,12 +27,6 @@
 		// 모듈 이름을 처리할 기준 디렉토리
 		"baseUrl": "./",
 
-		// 모듈 import 시 baseUrl 시작으로 mapping
-		"paths": {
-			"components/*": ["components/*"],
-			"pages/*": ["pages/*"]
-		},
-
 		// default export 사용하지 않은 모듈도 default import 가능하게 할 것인가
 		"allowSyntheticDefaultImports": true,
 
