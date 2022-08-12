@@ -42,6 +42,5 @@
 		// 같은 파일에 대한 일관되지 않은 참조 허용하지 않음
 		"forceConsistentCasingInFileNames": true
 	},
-	"include": ["src/**/*.ts", "src/**/*.tsx"],
-	"exclude": ["node_modules"]
+	"include": ["src"]
 }

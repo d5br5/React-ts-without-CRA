@@ -9,9 +9,10 @@ module.exports = (env, argv) => {
 		mode: prod ? "production" : "development",
 		devtool: prod ? "hidden-source-map" : "eval",
 		devServer: {
-			port: 3000,
+			port: 3001,
 			hot: true,
 			open: true,
+			historyApiFallback: true,
 		},
 		entry: "./src/index.tsx",
 		output: {

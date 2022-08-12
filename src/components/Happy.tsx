@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 const Title = styled.div`
 	color: red;
 `;
 
 const Happy = () => {
-	return <div>happy</div>;
+	return <Title>happy</Title>;
 };
 
 export default Happy;
